@@ -48,8 +48,8 @@ The current addresses in the script should work for Sepolia testnet, but you can
 ### To change the deposit amount:
 Modify the `amount_to_deposit` variable in the `main()` function:
 ```python
-# Define amount to deposit (e.g., 0.5 USDC)
-amount_to_deposit = int(0.5 * (10 ** decimals))
+# Amount to approve and deposit (1 USDC, 6 decimals)
+    usdc_amount = w3.to_wei(1, 'mwei')  # 1 USDC = 10^6 wei
 ```
 
 ### To use Holesky testnet instead:
