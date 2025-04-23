@@ -52,8 +52,3 @@ Modify the `amount_to_deposit` variable in the `main()` function:
     usdc_amount = w3.to_wei(1, 'mwei')  # 1 USDC = 10^6 wei
 ```
 
-### To use Holesky testnet instead:
-Change the `TESTNET` variable from "sepolia" to "holesky" and update the contract addresses if needed:
-```python
-TESTNET = "holesky"
-```
